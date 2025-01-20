@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ambio - Beautiful Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo_without_bg.png" alt="Ambio Logo">
+        </a>
+      </div>
+      <nav>
+        <div class="nav-item">
+          <a href="index.html">Home </a>
+          
+        </div>
+        <div class="nav-item">
+          <a href="prod.html">Products </a>
+         
+        </div>
+        <div class="nav-item">
+          <a href="categories.html">Categories </a>
+          
+    
+          <a href="aboutus.html">About us </a>
+         
+        </div>
+        <div class="nav-item">
+          <a href="contactus.html">Contact us </a>
+     
+        </div>
+        <div class="nav-item">
+          <a href="ourblog.html">Blog </a>
+      
+        </div>
+      </nav>
+      <div class="profile">
+        <input type="text" class="search-input" placeholder="Search..." />
+        <!-- <a href="search-results.html"> -->
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </a>
+        <a href="wishlist.html">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <a href="cart.html">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        <a href="my-profile.html">
+          <i class="fa-regular fa-user"></i>
+          
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+
+
+    <div class="hero">
+      
+      <!-- <img src="landing image front.jpg" alt="image"> -->
+      <div class="wave-pattern"></div>
+      <div class="shadow-box">
+        <div class="wave-pattern">
+          <svg width="140" height="120">
+            <!-- First row -->
+            <path d="M0 10 Q10 30 20 10 T40 10 T60 10 T80 10 T100 10 T120 10 T140 10 T160 10 T180 10" stroke="#ccc" fill="none" stroke-width="2"></path>
+            <!-- Second row with closer spacing -->
+            <path d="M0 30 Q10 50 20 30 T40 30 T60 30 T80 30 T100 30 T120 30 T140 30 T160 30 T180 30" stroke="#ccc" fill="none" stroke-width="2"></path>
+            <!-- Third row with closer spacing -->
+            <path d="M0 50 Q10 70 20 50 T40 50 T60 50 T80 50 T100 50 T120 50 T140 50 T160 50 T180 50" stroke="#ccc" fill="none" stroke-width="2"></path>
+            <!-- Fourth row with closer spacing -->
+            <path d="M0 70 Q10 90 20 70 T40 70 T60 70 T80 70 T100 70 T120 70 T140 70 T160 70 T180 70" stroke="#ccc" fill="none" stroke-width="2"></path>
+          </svg>
+        
+        </div>
+        <h1>Your Path to a Beautiful Home</h1>
+        <p>Ambigo is your one-stop shop for quality interior design products and expert advice. Enjoy free expert guidance to style your space and explore our 360° views of products and rooms for a detailed look. Create a home that’s uniquely yours with Ambigo.</p>
+        <button id="exploreBtn">LOG-IN</button>
+      </div>
+    </div>
+  </header>
+ <!-- Explore Button -->
+ <button id="exploreBtn">Explore Now</button>
+<!-- Modal -->
+
+<!-- Popup -->
+<div id="popupWrapper">
+  <div id="popupWindow">
+    <!-- Image at the top -->
+    <img src="loginimg.png" alt="Popup Banner">
+    <!-- Close Button -->
+    <button id="closePopup">&times;</button>
+    <!-- Tab Header -->
+    <div class="tab-header">
+      <button class="tab-btn active" data-target="loginTab">Login</button>
+      <button class="tab-btn" data-target="signInTab">Sign In</button>
+    </div>
+    <!-- Tab Content -->
+    <div id="loginTab" class="tab-content active">
+      <form>
+        <div class="form-group">
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" placeholder="Enter your password">
+        </div>
+        <button type="submit" class="btn-submit">Login</button>
+        <!-- Social Login -->
+        <div class="social-login">
+          <button class="btn-google">Login with Google</button>
+          <button class="btn-facebook">Login with Facebook</button>
+        </div>
+      </form>
+    </div>
+    <div id="signInTab" class="tab-content">
+      <form>
+        <div class="form-group">
+          <label for="signInEmail">Email</label>
+          <input type="email" id="signInEmail" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="signInPassword">Password</label>
+          <input type="password" id="signInPassword" placeholder="Create a password">
+        </div>
+        <button type="submit" class="btn-submit">Sign In</button>
+        <!-- Social Login -->
+        <div class="social-login">
+          <button class="btn-google">Sign In with Google</button>
+          <button class="btn-facebook">Sign In with Facebook</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+  <!-- Decorative Boxes -->
+  <div class="decorative-boxes">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+  </div>
+
+  <!-- Slider Section -->
+  <section class="slider-section" id="slider" style="margin-top: 170px;">
+    <div class="slider">
+      <div class="slide" style="background-image: url('slid5.png');">
+        <div class="overlay-text">
+          <h2>Living Room Decore
+
+
+
+            by Ambio</h2>
+          <button>shop now</button>
+        </div>
+      </div>
+      <div class="slide" style="background-image: url('slid2.png');">
+        <div class="overlay-text">
+          <h2>Image 2</h2>
+          <button>Learn More</button>
+        </div>
+      </div>
+      <div class="slide" style="background-image: url('slid3.png');">
+        <div class="overlay-text">
+          <h2>Image 3</h2>
+          <button>Learn More</button>
+        </div>
+      </div>
+      <div class="slide" style="background-image: url('slid4.png');">
+        <div class="overlay-text">
+          <h2>Image 4</h2>
+          <button>Learn More</button>
+        </div>
+      </div>
+      <div class="slide" style="background-image: url('slid1.png');">
+        <div class="overlay-text">
+          <h2>Image 5</h2>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="new-section">
+    <div class="container2">
+      <!-- Center Table Box -->
+      <div class="boxin">
+          <div class="label">NEW COLLECTION</div>
+          <h2>Center Table</h2>
+          <ul>
+              <li>Square Table</li>
+              <li>Round Table</li>
+              <li>Wooden Table</li>
+              <li>Glass Table</li>
+          </ul>
+          <a href="#" class="view-all">View All →</a>
+          <img src="tablenobg.png" alt="Center Table" class="product-image center-table-image">
+      </div>
+
+      <!-- Study Lamp Box -->
+      <div class="boxin">
+          <div class="label">NEW COLLECTION</div>
+          <h2>Study Lamp</h2>
+          <ul>
+              <li>Flore lamps</li>
+              <li>Tripod lamps</li>
+              <li>Table lamps</li>
+              <li>Lighting lamps</li>
+          </ul>
+          <a href="#" class="view-all">View All →</a>
+          <img src="lampnobg.png" alt="Study Lamp" class="product-image study-lamp-image">
+      </div>
+
+      <!-- Discount Box with Link -->
+      <a href="categories.html" class="discount-box">
+          <div class="discount-content">
+              <h3>Get Discount</h3>
+              <p>30% OFFER</p>
+          </div>
+      </a>
+
+      <!-- Lounge Chair Box (Larger Box) -->
+       
+      <div class="box_large1">
+          <div class="label">NEW COLLECTION</div>
+          <h2>Lounge Chair</h2>
+          <ul>
+              <li>Arm Chair</li>
+              <li>Wing Chair</li>
+              <li>Cafe Chair</li>
+              <li>Wheels Chair</li>
+          </ul>
+          <a href="#" class="view-all">View All →</a>
+          <img src="chairnobg.png" alt="Lounge Chair" class="product-image lounge-chair-image">
+      </div>
+  </div>
+  </div>
+
+<br>
+<br>
+<br>
+
+
+
+<!-- neww   -->
+<div class="text_categori">
+  <h2>Our categories</h2>
+</div>
+<div class="scroll_circle_box">
+  <div class="circle-container">
+    <div class="circle">
+      <a href="categories.html">
+        <img src="circle10.png" alt="Image 1">
+      </a>
+      <div class="circle-text"></div>
+    </div>
+
+    <div class="circle">
+      <a href="categories.html">
+        <img src="circle2.png" alt="Image 2">
+      </a>
+      <div class="circle-text"></div>
+    </div>
+
+    <div class="circle">
+      <a href="categories.html">
+        <img src="circle3.png" alt="Image 3">
+      </a>
+      <div class="circle-text"></div>
+    </div>
+
+    <div class="circle">
+      <a href="categories.html">
+        <img src="circle4.png" alt="Image 4">
+      </a>
+      <div class="circle-text"></div>
+    </div>
+
+    <div class="circle">
+      <a href="categories.html">
+        <img src="circle5.png" alt="Image 5">
+      </a>
+      <div class="circle-text"></div>
+    </div>
+
+    <div class="circle">
+      <a href="categories.html">
+        <img src="circle6.png" alt="Image 6">
+      </a>
+      <div class="circle-text"></div>
+    </div>
+
+    <div class="circle">
+      <a href="categories.html">
+        <img src="circle7.png" alt="Image 7">
+      </a>
+      <div class="circle-text"></div>
+    </div>
+
+    <div class="circle">
+      <a href="categories.html">
+        <img src="circle8.png" alt="Image 8">
+      </a>
+      <div class="circle-text"></div>
+    </div>
+
+    <div class="circle">
+      <a href="categories.html">
+        <img src="circle9.png" alt="Image 9">
+      </a>
+      <div class="circle-text"></div>
+    </div>
+
+    <div class="circle">
+      <a href="categories.html">
+        <img src="circle2.png" alt="Image 10">
+      </a>
+      <div class="circle-text"></div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="tranding25">
+  <div class="container25">
+    <div class="header-row25">
+      <div>
+        <h2>Trending products </h2>
+        <h2>for you!</h2>
+        <div class="categories25">
+          <span>Bed Room</span>
+          <span class="active25">Living Room</span>
+          <span>Dining Room</span>
+          <span>Outdoor</span>
+          <span>Indoor</span>
+        </div>
+      </div>
+      <button class="view-all25" onclick="location.href='categories.html'">View all the posts →</button>
+    </div>
+    <div class="products-grid25">
+      <!-- Product cards will be dynamically inserted here -->
+    </div>
+  </div>
+</div>
+
+<!-- Link to Font Awesome for heart icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+<br>
+
+<!-- newww -->
+<section>
+<div class="contanerrs26">
+  <div class="container26">
+    <!-- First Box with Background Image -->
+    <div class="box26 box-image26">
+        <div class="text-content26">
+            <pre><h1>Best Online Deals, 
+Free Stuff</h1></pre>
+            <p>Only on this week...Don’t miss</p>
+            <button class="deal-button26" onclick="redirectToDeal()">Get Best Deal &#8594;</button>
+
+        </div>
+    </div>
+    
+    <!-- Second Box without Background Image -->
+    <div class="box26 box-plain26">
+        <div class="text-content261">
+          <pre>
+            <h1>10% cash-back
+on personal care</h1></pre>
+            
+            <p>Max cashback:</p>
+            <button class="deal-button26" onclick="redirectToDeal()">Explore Offers  &#8594;</button>
+
+            <!-- <button class="deal-button26">Explore Offers &#8594;</button> -->
+        </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- newww -->
+<div class="scrolingbox">
+  <pre>
+  <h1>Don’t take our word, 
+see what our clients say
+</h1>
+</pre>
+  
+  <div class="testimonial-container">
+    <div class="testimonial-box">
+      <img src="client1.png" alt="Client 1">
+      <pre>
+      <p>
+        
+ 
+        
+
+
+
+        
+        
+        
+        
+The subscription plan’s designer consultations and product discounts were incredibly helpful.
+I saved both time and money by getting expert guidance and exclusive deals, which made the 
+decorating process smoother and more affordable!</p>
+      <h3>Geet Yadav</h3>
+<span>India</span></pre>
+    </div>
+    <div class="testimonial-box">
+      <img src="girl.png" alt="Client 2">
+     <pre>
+      <p>
+        
+ 
+        
+
+
+        
+        
+        
+        
+        
+Ambigo made it so easy for me to confidently design my living room.
+With access to real-time design advice from a professional,
+I could be sure my choices worked together. The designer gave me practical 
+tips on layout, color coordination, and styling, which really elevated the 
+final look of my space. Instead of second-guessing my choices, I felt supported 
+every step of the way and ended up with a living room I truly love!
+        <h3>Riya Khare</h3>
+<span>India</span></pre>
+    </div>
+    <div class="testimonial-box">
+      <img src="gi.png" alt="Client 3">
+      <pre>
+        <p>
+          
+   
+          
+  
+  
+          
+          
+          
+          
+          
+The subscription plan’s designer consultations and product discounts were incredibly helpful.
+I saved both time and money by getting expert guidance and exclusive deals, which made the 
+decorating process smoother and more affordable!</p>
+        <h3>Geet Yadav</h3>
+  <span>India</span></pre>
+    </div>
+    <div class="testimonial-box">
+      <img src="client1.png" alt="Client 4">
+      <pre>
+        <p>
+          
+   
+          
+  
+  
+          
+          
+          
+          
+          
+  As a decorating beginner, Ambio's tools and designer advice made it easy to design a space I love...</p>
+        <h3>Karan Gupta</h3>
+  <span>India</span></pre>
+    </div>
+  </div>
+
+</div>
+
+<!-- neww -->
+
+<div class="explorsection">
+
+  <div class="blog-section">
+    <header class="blog-header">
+      <h2>Explore Our Latest Blog</h2>
+      <button class="view-all-btn" onclick="location.href='all-posts.html'">View all post →</button>
+    </header>
+    <div class="blog-container">
+      <div class="blog-card">
+        <img src="qution1.png" alt="Vases for Hall Decor">
+        <p>Top 5 Vases for Hall Decor</p>
+      </div>
+      <div class="blog-card">
+        <img src="blog1.png" alt="Nursery Decor Tips">
+        <p>Nursery Decor Tips for a Dreamy Space</p>
+      </div>
+      <div class="blog-card">
+        <img src="blog2.png" alt="Gardening Tips">
+        <p>Outdoor Gardening Tips for Your Green Oasis</p>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+</div>
+
+
+<!-- newwww -->
+
+
+<div class="qutionsection">
+
+  <div class="faq-section">
+    <h2>Got Questions? We’ve Got Answers!</h2>
+    
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <p>How do I choose the right furniture for my space?</p>
+            <span class="arrow">→</span>
+        </div>
+        <div class="faq-answer">
+            <p>To choose the right furniture, consider your space's dimensions, your personal style, and the furniture's functionality.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <p>What materials are your furniture items made of?</p>
+            <span class="arrow">→</span>
+        </div>
+        <div class="faq-answer">
+            <p>Our furniture is made from high-quality materials, including wood, metal, and eco-friendly fabrics.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <p>How does the subscription plan work?</p>
+            <span class="arrow">→</span>
+        </div>
+        <div class="faq-answer">
+            <p>The subscription plan allows you to receive new products every month based on your selected preferences.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <p>Can I track my order after purchase?</p>
+            <span class="arrow">→</span>
+        </div>
+        <div class="faq-answer">
+            <p>Yes, you can track your order through the tracking link provided in your email confirmation.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <p>Are there any ongoing promotions or discounts?</p>
+            <span class="arrow">→</span>
+        </div>
+        <div class="faq-answer">
+            <p>We frequently offer promotions and discounts, especially during holiday seasons. Check our website for the latest offers.</p>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+
+<div class="footerrr">
+  <footer class="footer">
+    <div class="logo">
+        <img src="logo_without_bg.png" alt="Logo">
+    </div>
+    <div class="footer-content">
+        <div class="footer-column">
+            <h3>About</h3>
+            <a href="#">Our Company</a>
+            <a href="#">Our Story</a>
+            <a href="#">Blog</a>
+        </div>
+        <div class="footer-column">
+            <h3>Information</h3>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Return</a>
+        </div>
+        <div class="footer-column">
+            <h3>Support</h3>
+            <a href="#">Contact Us</a>
+            <a href="#">Help</a>
+            <a href="#">FAQ</a>
+        </div>
+    </div>
+</footer>
+<div class="footer-bottom">
+    Copyright @ 2021 UI8 LLC. All rights reserved
+</div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html> 

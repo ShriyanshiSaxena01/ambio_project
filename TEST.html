@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ambio - Beautiful Home</title>
+  <link rel="stylesheet" href="pod.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo_without_bg.png" alt="Ambio Logo">
+        </a>
+      </div>
+      <nav>
+        <div class="nav-item">
+          <a href="#">Home <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown">
+            <a href="home-submenu1.html">Submenu 1</a>
+            <a href="home-submenu2.html">Submenu 2</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="#">Products <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown">
+            <a href="products-submenu1.html">Submenu 1</a>
+            <a href="products-submenu2.html">Submenu 2</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="#">Categories <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown">
+            <a href="categories-submenu1.html">Submenu 1</a>
+            <a href="categories-submenu2.html">Submenu 2</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="#">About us <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown">
+            <a href="about-submenu1.html">Submenu 1</a>
+            <a href="about-submenu2.html">Submenu 2</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="#">Contact us <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown">
+            <a href="contact-submenu1.html">Submenu 1</a>
+            <a href="contact-submenu2.html">Submenu 2</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="#">Blog <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown">
+            <a href="blog-submenu1.html">Submenu 1</a>
+            <a href="blog-submenu2.html">Submenu 2</a>
+          </div>
+        </div>
+      </nav>
+      <div class="profile">
+        <input type="text" class="search-input" placeholder="Search..." />
+        <!-- <a href="search-results.html"> -->
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </a>
+        <a href="wishlist.html">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <a href="cart.html">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        <a href="profile.html">
+          <i class="fa-regular fa-user"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="baground">
+    <h1>Categories</h1>
+  </div>
+
+
+ 
+
+
+  <!--  -->
+  <div class="body22">
+    <div class="product-page">
+        <a href="#" class="back-link">&larr; Back to product</a>
+        <div class="product-container">
+          <div class="bodyvr">
+            <div class="containervr">
+            
+              <div class="vr-box">
+                  <canvas id="vrCanvas"></canvas>
+              </div>
+            </div>
+          </div>
+            <div class="product-details">
+                <div class="discount">Save15% 
+                    <button class="calendar-btn" onclick="toggleCalendarPopup()" >
+                        
+                        <pre><h5>Chose Day</h5></pre><img src="calander.png" alt="Calendar" class="calendar-icon">
+                    </button>
+                </div>
+                <div id="calendar-popup" class="calendar-popup">
+                    <input type="date" id="calendar-input">
+                    <button class="close-btn" onclick="toggleCalendarPopup()">Close</button>
+                </div>
+                <h2>Desk Chair</h2>
+                <p class="description">Elevate Your Workspace with the Boss Chair: Where Comfort Meets Timeless Elegance.</p>
+                <div class="price">
+                    <span class="current-price">&#8377;10,999</span>
+                    <span class="original-price">&#8377;12,999</span>
+                </div>
+                <div class="stock-status">In Stock</div>
+                <div class="rating">
+                    <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                    <span class="rating-info">4.1 | 10 Reviews | 21 Sold</span>
+                </div>
+                <div class="quantity-selector">
+                    <button class="decrease">-</button>
+                    <input type="number" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <div class="actions">
+                    <button class="buy-now">Buy Now</button>
+                    <button class="add-to-cart">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+       
+</div>
+
+ 
+
+
+
+  <div class="footerrr">
+    <footer class="footer">
+      <div class="logo">
+          <img src="logo_without_bg.png" alt="Logo">
+      </div>
+      <div class="footer-content">
+          <div class="footer-column">
+              <h3>About</h3>
+              <a href="#">Our Company</a>
+              <a href="#">Our Story</a>
+              <a href="#">Blog</a>
+          </div>
+          <div class="footer-column">
+              <h3>Information</h3>
+              <a href="#">Delivery Information</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Return</a>
+          </div>
+          <div class="footer-column">
+              <h3>Support</h3>
+              <a href="#">Contact Us</a>
+              <a href="#">Help</a>
+              <a href="#">FAQ</a>
+          </div>
+      </div>
+  </footer>
+  <div class="footer-bottom">
+      Copyright @ 2021 UI8 LLC. All rights reserved
+  </div>
+  
+  
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="TEST.js"></script>
+</body>
+</html>

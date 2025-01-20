@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ambio - productr</title>
+  <link rel="stylesheet" href="pod.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+ <!-- Header -->
+ <header>
+  <div class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="logo_without_bg.png" alt="Ambio Logo">
+      </a>
+    </div>
+    <nav>
+      <div class="nav-item">
+        <a href="index.html">Home </a>
+        
+      </div>
+      <div class="nav-item">
+        <a href="prod.html">Products </a>
+       
+      </div>
+      <div class="nav-item">
+        <a href="categories.html">Categories </a>
+        
+  
+        <a href="aboutus.html">About us </a>
+       
+      </div>
+      <div class="nav-item">
+        <a href="contactus.html">Contact us </a>
+   
+      </div>
+      <div class="nav-item">
+        <a href="ourblog.html">Blog </a>
+    
+      </div>
+    </nav>
+    <div class="profile">
+      <input type="text" class="search-input" placeholder="Search..." />
+      <!-- <a href="search-results.html"> -->
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      </a>
+      <a href="wishlist.html">
+        <i class="fa-regular fa-heart"></i>
+      </a>
+      <a href="cart.html">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+      <a href="my-profile.html">
+        <i class="fa-regular fa-user"></i>
+        
+      </a>
+    </div>
+  </div>
+</header>
+
+
+
+  </header>
+
+  <div class="baground">
+    <h1>Products </h1>
+  </div>
+
+
+<!-- new -->
+<div class="body22">
+    <div class="product-page">
+        <a href="#" class="back-link">&larr; Back to product</a>
+        <div class="product-container">
+          <div class="image-container" id="vr-view">
+            <div class="container">
+              <div class="vr-box">
+                <canvas id="vrCanvas"></canvas>
+                <video id="vrVideo" autoplay loop muted>
+                    <source src="vr" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+          
+            <div class="product-details">
+              <div class="discount">Save 15%
+                <button class="calendar-btn" onclick="toggleCalendarPopup()">
+                    <h5>Choose Day</h5>
+                    <img src="calander.png" alt="Calendar" class="calendar-icon">
+                </button>
+            </div>
+            <div id="calendar-popup" class="calendar-popup hidden">
+                <input type="date" id="calendar-input">
+                <button class="close-btn" onclick="toggleCalendarPopup()">Close</button>
+            </div>
+            
+                <h2>Desk Chair</h2>
+                <p class="description">Elevate Your Workspace with the Boss Chair: Where Comfort Meets Timeless Elegance.</p>
+                <div class="price">
+                    <span class="current-price">&#8377;10,999</span>
+                    <span class="original-price">&#8377;12,999</span>
+                </div>
+                <div class="stock-status">In Stock</div>
+                <div class="rating">
+                    <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                    <span class="rating-info">4.1 | 10 Reviews | 21 Sold</span>
+                </div>
+              <div class="quantity-selector">
+    <button class="decrease" onclick="decreaseQuantity()">-</button>
+    <input type="number" id="quantity-input" value="1" min="1">
+    <button class="increase" onclick="increaseQuantity()">+</button>
+</div>
+<div class="actions">
+  <button class="buy-now" onclick="redirectTo('OrderCompleted.html')">Buy Now</button>
+  <button class="add-to-cart" onclick="redirectTo('cart.html')">Add To Cart</button>
+</div>
+
+            </div>
+        </div>
+       <div class="nameof"> <h2>Coupon and Discount</h2></div>
+        <div class="promo-section-container">
+          <div class="promo-section">
+              <div class="promo-box" onclick="openPopup('ROT1.png')">
+                  <img src="ROT1.png" alt="Promo 1">
+                  <!-- <p>Promo Text 1</p> -->
+              </div>
+              <div class="promo-box" onclick="openPopup('ROT2.png')">
+                  <img src="ROT2.png" alt="Promo 2">
+                  <!-- <p>Promo Text 2</p> -->
+              </div>
+              <div class="promo-box" onclick="openPopup('ROT3.png')">
+                  <img src="ROT3.png" alt="Promo 3">
+                  <!-- <p>Promo Text 3</p> -->
+              </div>
+          </div>
+          
+          
+          <div class="coupon-section">
+            
+              <h3>GET EXTRA 15% OFF</h3>
+             <h6>ON PURCHASE OF 2+ STYLES</h6>
+              <div class="discount-code">
+                  USE CODE: <strong>TW015</strong>
+              </div>
+          </div>
+      </div>
+</div>
+
+
+
+
+<div class="data1">
+  <div class="product-details">
+    <div class="tabs">
+        <button class="tab-button active">Description</button>
+        <button class="tab-button">Additional Information</button>
+        <button class="tab-button">Review</button>
+    </div>
+
+    <div class="description">
+        <p class="intro-text">
+            Elevate your workspace experience with the Boss Chair, designed to embody luxury, comfort, and professional elegance.
+            This premium chair is the perfect addition to any office or home setup, blending ergonomic innovation with high-quality materials to support you through long work hours.
+            The Boss Chair is crafted from plush, breathable fabric (or genuine leather, depending on your preference) that allows for comfortable, all-day use.
+            With its contoured backrest, adjustable armrests, and lumbar support, it promotes healthy posture, reducing fatigue and back strain.
+        </p>
+    </div>
+
+    <div class="about-item">
+        <h2>About this Item:</h2>
+        <ul>
+            <li>Ergonomic Design: Thoughtfully designed to support the spine and align posture for long-lasting comfort.</li>
+            <li>Adjustable Features: Height, tilt, and armrest adjustments allow for a personalized seating experience.</li>
+            <li>Premium Materials: Made from high-quality fabric or leather options with a durable, heavy-duty base.</li>
+            <li>Lumbar Support: Built-in lumbar support reduces strain and promotes comfort during prolonged sitting.</li>
+            <li>360-Degree Swivel & Smooth Rolling Casters: Provides flexibility and mobility without scratching floors.</li>
+        </ul>
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+<div class="newwside">
+  <div class="review-container">
+    <!-- Customer reviews and star ratings -->
+    <div class="customer-reviews">
+        <h1>Customer reviews</h1>
+        <div class="overall-rating">
+            <span class="rating-stars">★★★★☆</span>
+            <span class="rating-percentage">69% 5 Star</span>
+        </div>
+        <div class="rating-bar">
+            <div class="rating-bar-item" style="width: 69%;">5 Star</div>
+            <div class="rating-bar-item" style="width: 10%;">4 Star</div>
+            <div class="rating-bar-item" style="width: 9%;">3 Star</div>
+            <div class="rating-bar-item" style="width: 6%;">2 Star</div>
+            <div class="rating-bar-item" style="width: 5%;">1 Star</div>
+        </div>
+    </div>
+
+    <!-- Customer say section -->
+    <div class="customer-say">
+        <h2>Customer say</h2>
+        <p>Customers are thrilled with the Bosa Chair, praising its blend of comfort and style. Many have noted that it not only delivers superior seating comfort but also offers excellent back support, making long workdays much easier. Plus, it looks stylish in any office—modern and elegant. Definitely worth every penny!</p>
+
+        <!-- Review list -->
+        <div class="reviews">
+            <div class="review">
+                <p class="reviewer-name">Chris Borkin</p>
+                <p class="review-text">Ultimate Comfort and Style</p>
+                <div class="stars">★★★★★</div>
+                <p class="review-body">I'm beyond impressed with the Bosa Chair! It offers exceptional back support, making long workdays so much easier. Plus, it looks stunning in my office—modern and elegant. Definitely worth every penny.</p>
+            </div>
+            <div class="review">
+                <p class="reviewer-name">Harry Gupta</p>
+                <p class="review-text">A Good Balance of Comfort and Elegance</p>
+                <div class="stars">★★★★☆</div>
+                <p class="review-body">The design is very comfortable, and I love the luxury feel it brings to my workspace. The only drawback is the chair is a bit bulky and a bit tricky to move around. Still, it's a fantastic investment.</p>
+            </div>
+            <div class="review">
+                <p class="reviewer-name">Grace Lee</p>
+                <p class="review-text">Great Support for Long Hours</p>
+                <div class="stars">★★★★★</div>
+                <p class="review-body">After using the chair for a few weeks, the Bosa Chair has been a lifesaver. The ergonomic support really reduces back strain and it's so easy to assemble too. Highly recommend for anyone needing comfort and style.</p>
+            </div>
+        </div>
+<!-- 
+        Pagination for reviews 
+        <div class="pagination">
+            <button>Previous</button>
+            <span>Showing 1 to 3 of 20</span>
+            <button>Next</button>
+        </div> -->
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="silimilar">
+  <div class="sideboxes">
+    <div class="cordsss">
+      <h1>Discover similar items</h1>
+      <div class="product-container">
+        <!-- Sample product cards -->
+        <div class="product-card">
+          <div class="heart-btn" onclick="toggleHeart(this)">&#10084;</div>
+            <img src="circle1.png" alt="Director Office Chair">
+            <p>Director Office Chair</p>
+           <div class="iteaminline">
+             <p class="price">&#8377;10,999</p>
+             <div class="circleinit"><i class="fa-solid fa-cart-shopping"></i></div>
+           </div>
+        </div>
+        <div class="product-card">
+          <div class="heart-btn" onclick="toggleHeart(this)">&#10084;</div>
+            <img src="circle1.png" alt="Director Office Chair">
+            <p>Director Office Chair</p>
+           <div class="iteaminline">
+             <p class="price">&#8377;10,999</p>
+             <div class="circleinit"><i class="fa-solid fa-cart-shopping"></i></div>
+           </div>
+        </div>
+        <div class="product-card">
+          <div class="heart-btn" onclick="toggleHeart(this)">&#10084;</div>
+            <img src="circle1.png" alt="Director Office Chair">
+            <p>Director Office Chair</p>
+           <div class="iteaminline">
+             <p class="price">&#8377;10,999</p>
+             <div class="circleinit"><i class="fa-solid fa-cart-shopping"></i></div>
+           </div>
+        </div>
+        <div class="product-card">
+          <div class="heart-btn" onclick="toggleHeart(this)">&#10084;</div>
+            <img src="circle1.png" alt="Director Office Chair">
+            <p>Director Office Chair</p>
+           <div class="iteaminline">
+             <p class="price">&#8377;10,999</p>
+             <div class="circleinit"><i class="fa-solid fa-cart-shopping"></i></div>
+           </div>
+        </div>
+     
+    </div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="footerrr">
+  <footer class="footer">
+    <div class="logo">
+        <img src="logo_without_bg.png" alt="Logo">
+    </div>
+    <div class="footer-content">
+        <div class="footer-column">
+            <h3>About</h3>
+            <a href="#">Our Company</a>
+            <a href="#">Our Story</a>
+            <a href="#">Blog</a>
+        </div>
+        <div class="footer-column">
+            <h3>Information</h3>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Return</a>
+        </div>
+        <div class="footer-column">
+            <h3>Support</h3>
+            <a href="#">Contact Us</a>
+            <a href="#">Help</a>
+            <a href="#">FAQ</a>
+        </div>
+    </div>
+</footer>
+<div class="footer-bottom">
+    Copyright @ 2021 UI8 LLC. All rights reserved
+</div>
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="product.js"></script>
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ambio - Beautiful Home</title>
+  <link rel="stylesheet" href="categories.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo_without_bg.png" alt="Ambio Logo">
+        </a>
+      </div>
+      <nav>
+        <div class="nav-item">
+          <a href="index.html">Home <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown">
+            <a href="home-submenu1.html">Submenu 1</a>
+            <a href="home-submenu2.html">Submenu 2</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="#">Products <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown">
+            <a href="products-submenu1.html">Submenu 1</a>
+            <a href="products-submenu2.html">Submenu 2</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="#">Categories <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown">
+            <a href="categories-submenu1.html">Submenu 1</a>
+            <a href="categories-submenu2.html">Submenu 2</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="#">About us <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown">
+            <a href="about-submenu1.html">Submenu 1</a>
+            <a href="about-submenu2.html">Submenu 2</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="#">Contact us <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown">
+            <a href="contact-submenu1.html">Submenu 1</a>
+            <a href="contact-submenu2.html">Submenu 2</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="ourblog.html">Blog <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown">
+            <a href="blog-submenu1.html">Submenu 1</a>
+            <a href="blog-submenu2.html">Submenu 2</a>
+          </div>
+        </div>
+      </nav>
+      <div class="profile">
+        <input type="text" class="search-input" placeholder="Search..." />
+        <!-- <a href="search-results.html"> -->
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </a>
+        <a href="wishlist.html">
+          <i class="fa-regular fa-heart"></i>
+        </a>
+        <a href="cart.html">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        <a href="profile.html">
+          <i class="fa-regular fa-user"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="baground">
+    <h1>Categories</h1>
+  </div>
+
+
+
+
+<!-- nn -->
+
+
+
+<div class="toppart">
+    <h2>filter options</h2>
+    <div class="rightside">
+        <label for="sort">Sort by:</label>
+    <select id="sort">
+        <option>Default Sorting</option>
+        <option>Price: Low to High</option>
+        <option>Price: High to Low</option>
+        <option>Newest</option>
+    </select>
+    <label for="size">Size:</label>
+    <select id="size">
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+    </select>
+    </div>
+</div>
+
+
+
+<div class="filter-section">
+          
+    <div class="filter-title">Category</div>
+    <label class="filter-option"><input type="radio" name="category"> Bedroom</label>
+    <label class="filter-option"><input type="radio" name="category"> Living Room</label>
+    <label class="filter-option"><input type="radio" name="category"> Office</label>
+    <label class="filter-option"><input type="radio" name="category"> Outdoor</label>
+    <label class="filter-option"><input type="radio" name="category"> Kitchen</label>
+    <label class="filter-option"><input type="radio" name="category"> Decor</label>
+</div>
+
+
+
+
+<div class="filter-section">
+    <div class="filter-title">Price</div>
+    <div class="price-range">
+      <input type="range" placeholder="Min" class="price-input"> 
+      <!-- <span>-</span> -->
+      <!-- <input type="range" placeholder="Max" class="price-input"> -->
+    </div>
+    </div>
+
+
+  <div class="filter-section">
+    <div class="filter-title">Material</div>
+    <label class="filter-option1"><input type="button" class="filter-btn" value="Cloth"></label>
+    <label class="filter-option1"><input type="button" class="filter-btn" value="Wood"></label>
+    <label class="filter-option1"><input type="button" class="filter-btn" value="Upholstered"></label>
+    <label class="filter-option1"><input type="button" class="filter-btn" value="Glass"></label>
+    <label class="filter-option1"><input type="button" class="filter-btn" value="Plastic"></label>
+    <label class="filter-option1"><input type="button" class="filter-btn" value="Rattan"></label>
+</div>
+
+
+<div class="filter-section">
+    <div class="filter-title">Color</div>
+    <label class="filter-option"><input type="checkbox"> Brown</label>
+    <label class="filter-option"><input type="checkbox"> Orange</label>
+    <label class="filter-option"><input type="checkbox"> Grey</label>
+    <label class="filter-option"><input type="checkbox"> Blue</label>
+    <label class="filter-option"><input type="checkbox"> White</label>
+    </div>
+    <div class="filter-section">
+    <div class="filter-title">Availability</div>
+    <label class="filter-option"><input type="radio" name="availability"> In Stock</label>
+    <label class="filter-option"><input type="radio" name="availability"> Out of Stock</label>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="sideboxes">
+        <div class="cordsss">
+          <div class="product-container">
+            <!-- Sample product cards -->
+             
+            <div class="product-card">
+              <div class="heart-btn" onclick="toggleHeart(this)">&#10084;</div>
+                <img src="circle1.png" alt="Director Office Chair">
+                <p>Director Office Chair</p>
+               <div class="iteaminline">
+                 <p class="price">&#8377;10,999  <del>&#8377;12000</del></p>
+                 <div class="circleinit"><i class="fa-solid fa-cart-shopping"></i></div>
+               </div>
+            </div>
+            <div class="product-card">
+              <div class="heart-btn" onclick="toggleHeart(this)">&#10084;</div>
+                <img src="circle1.png" alt="Director Office Chair">
+                <p>Director Office Chair</p>
+               <div class="iteaminline">
+                 <p class="price">&#8377;10,999  <del>&#8377;12000</del></p>
+                 <div class="circleinit"><i class="fa-solid fa-cart-shopping"></i></div>
+               </div>
+            </div>
+            <div class="product-card">
+              <div class="heart-btn" onclick="toggleHeart(this)">&#10084;</div>
+                <img src="circle1.png" alt="Director Office Chair">
+                <p>Director Office Chair</p>
+               <div class="iteaminline">
+                 <p class="price">&#8377;10,999</p>
+                 <div class="circleinit"><i class="fa-solid fa-cart-shopping"></i></div>
+               </div>
+            </div>
+         
+        </div>
+    
+    
+        <div class="product-container">
+           <!-- Sample product cards -->
+           <div class="product-card">
+            <div class="heart-btn" onclick="toggleHeart(this)">&#10084;</div>
+              <img src="circle1.png" alt="Director Office Chair">
+              <p>Director Office Chair</p>
+             <div class="iteaminline">
+               <p class="price">&#8377;10,999</p>
+               <div class="circleinit"><i class="fa-solid fa-cart-shopping"></i></div>
+             </div>
+          </div>
+          <div class="product-card">
+            <div class="heart-btn" onclick="toggleHeart(this)">&#10084;</div>
+              <img src="circle1.png" alt="Director Office Chair">
+              <p>Director Office Chair</p>
+             <div class="iteaminline">
+               <p class="price">&#8377;10,999</p>
+               <div class="circleinit"><i class="fa-solid fa-cart-shopping"></i></div>
+             </div>
+          </div>
+          <div class="product-card">
+            <div class="heart-btn" onclick="toggleHeart(this)">&#10084;</div>
+              <img src="circle1.png" alt="Director Office Chair">
+              <p>Director Office Chair</p>
+             <div class="iteaminline">
+               <p class="price">&#8377;10,999</p>
+               <div class="circleinit"><i class="fa-solid fa-cart-shopping"></i></div>
+             </div>
+          </div>
+       
+        </div>
+    
+        <div class="product-container">
+           <!-- Sample product cards -->
+           <div class="product-card">
+            <div class="heart-btn" onclick="toggleHeart(this)">&#10084;</div>
+              <img src="circle1.png" alt="Director Office Chair">
+              <p>Director Office Chair</p>
+             <div class="iteaminline">
+               <p class="price">&#8377;10,999</p>
+               <div class="circleinit"><i class="fa-solid fa-cart-shopping"></i></div>
+             </div>
+          </div>
+          <div class="product-card">
+            <div class="heart-btn" onclick="toggleHeart(this)">&#10084;</div>
+              <img src="circle1.png" alt="Director Office Chair">
+              <p>Director Office Chair</p>
+             <div class="iteaminline">
+               <p class="price">&#8377;10,999</p>
+               <div class="circleinit"><i class="fa-solid fa-cart-shopping"></i></div>
+             </div>
+          </div>
+          <div class="product-card">
+            <div class="heart-btn" onclick="toggleHeart(this)">&#10084;</div>
+              <img src="circle1.png" alt="Director Office Chair">
+              <p>Director Office Chair</p>
+             <div class="iteaminline">
+               <p class="price">&#8377;10,999</p>
+               <div class="circleinit"><i class="fa-solid fa-cart-shopping"></i></div>
+             </div>
+          </div>
+        
+        </div>
+ 
+
+    
+    
+    
+    
+    
+    
+    <div class="product-container">
+      <!-- Sample product cards -->
+      <div class="product-card">
+        <div class="heart-btn" onclick="toggleHeart(this)">&#10084;</div>
+          <img src="circle1.png" alt="Director Office Chair">
+          <p>Director Office Chair</p>
+         <div class="iteaminline">
+           <p class="price">&#8377;10,999</p>
+           <div class="circleinit"><i class="fa-solid fa-cart-shopping"></i></div>
+         </div>
+      </div>
+      <div class="product-card">
+        <div class="heart-btn" onclick="toggleHeart(this)">&#10084;</div>
+          <img src="circle1.png" alt="Director Office Chair">
+          <p>Director Office Chair</p>
+         <div class="iteaminline">
+           <p class="price">&#8377;10,999</p>
+           <div class="circleinit"><i class="fa-solid fa-cart-shopping"></i></div>
+         </div>
+      </div>
+      <div class="product-card">
+        <div class="heart-btn" onclick="toggleHeart(this)">&#10084;</div>
+          <img src="circle1.png" alt="Director Office Chair">
+          <p>Director Office Chair</p>
+         <div class="iteaminline">
+           <p class="price">&#8377;10,999</p>
+           <div class="circleinit"><i class="fa-solid fa-cart-shopping"></i></div>
+         </div>
+      </div>
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+    
+    
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+<div class="footerrr">
+    <footer class="footer">
+      <div class="logo">
+          <img src="logo_without_bg.png" alt="Logo">
+      </div>
+      <div class="footer-content">
+          <div class="footer-column">
+              <h3>About</h3>
+              <a href="#">Our Company</a>
+              <a href="#">Our Story</a>
+              <a href="#">Blog</a>
+          </div>
+          <div class="footer-column">
+              <h3>Information</h3>
+              <a href="#">Delivery Information</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Return</a>
+          </div>
+          <div class="footer-column">
+              <h3>Support</h3>
+              <a href="#">Contact Us</a>
+              <a href="#">Help</a>
+              <a href="#">FAQ</a>
+          </div>
+      </div>
+  </footer>
+  <div class="footer-bottom">
+      Copyright @ 2021 UI8 LLC. All rights reserved
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    <script src="categories.js"></script>
+  </body>
+  </html>
